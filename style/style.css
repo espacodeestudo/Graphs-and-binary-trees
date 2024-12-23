@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    height: 100svh;
+    width: 100%;
+    color: #FFF;
+    font-family: 62.5%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+.container-inputs-radio{
+    background: #181818;
+    width: 20%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.container-inputs-radio >h2{
+    font-size: 1.2rem;
+}
+
+
+.container-inputs-radio > .strut-inputs-radio{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container-inputs-radio  .strut-inputs-radio > div{
+    display: flex;
+    gap: 1rem;
+    background: #252525;
+    padding: 0.7rem 0.5rem;
+    border-radius: .4rem;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.container-inputs-radio  .strut-inputs-radio > div:hover{
+    background: #363636;
+}
+
+
+
+
+
+.container-inputs-radio  .strut-inputs-radio  div > label{
+    font-weight: 700;
+
+}
+
+.container-inputs-radio  .strut-inputs-radio  div > input[type="radio"]{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgb(37 99 235 );
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+   padding: 0.5rem;
+   transition: all .4s ease-in-out;
+
+}
+
+.container-inputs-radio  .strut-inputs-radio  div > input[type="radio"]:checked{
+    background: #000;    
+
+}
+
+
+.Box {
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Box > .Arvore{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+ input[type="text"]{
+    appearance: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .2rem;
+    background: #3f3f3f;
+    color:#FFF;
+    border: 2px solid transparent;
+    transition: all .4s ease-in-out;
+
+}
+
+ input[type="text"]:hover{
+    border: 2px solid rgb(37 99 235 );
+}
+ input[type="text"]:focus{
+    border: 2px solid rgb(37 99 235 );
+}
+
+ input[type="text"]::placeholder{
+    color: #858585;
+}
+
+
+
+ .btn-add{
+    width: 20%;
+    border-radius: .4rem;
+    background: rgb(37 99 235 );
+    color: #FFF;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+ .btn-add:hover{
+    background: rgb(45, 112, 255);
+}
+
+.Box > .Box_des{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .2rem;
+    background: #111111;
+    color:#FFF;
+    border: 2px solid transparent;
+    transition: all .4s ease-in-out;
+    height: 100%;
+    
+}
+
+.Box > .Grafo{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.Box .Grafo  > input[type="text"]{
+    width: 50%;
+}

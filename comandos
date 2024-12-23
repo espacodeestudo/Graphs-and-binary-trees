@@ -1,0 +1,73 @@
+1. Navegação no Sistema de Arquivos
+ls: Lista arquivos e diretórios no diretório atual.
+cd [caminho]: Muda para o diretório especificado.
+pwd: Mostra o caminho do diretório atual.
+mkdir [nome]: Cria um novo diretório.
+rmdir [nome]: Remove diretórios vazios.
+rm -r [diretório]: Remove diretórios e seus conteúdos.
+
+2. Manipulação de Arquivos
+touch [arquivo]: Cria um novo arquivo vazio.
+cp [origem] [destino]: Copia arquivos ou diretórios.
+mv [origem] [destino]: Move ou renomeia arquivos ou diretórios.
+rm [arquivo]: Remove arquivos.
+cat [arquivo]: Mostra o conteúdo de um arquivo.
+nano [arquivo]: Edita um arquivo com o editor Nano.
+vim [arquivo]: Edita um arquivo com o editor Vim.
+
+ 3-Gerenciamento de Permissões
+chmod [permissão] [arquivo]: Altera permissões de arquivos ou diretórios.
+chown [usuário:grupo] [arquivo]: Altera o proprietário de um arquivo.
+
+4. Processos e Gerenciamento do Sistema
+ps aux: Lista todos os processos em execução.
+top: Monitora processos em tempo real.
+kill [PID]: Encerra um processo pelo ID.
+htop: Ferramenta interativa para monitorar processos (precisa ser instalada).
+df -h: Mostra o uso do disco.
+du -sh [diretório]: Mostra o tamanho de um diretório.
+
+5. Redes
+ping [endereço]: Verifica a conectividade com um host.
+ifconfig: Mostra informações sobre interfaces de rede.
+curl [URL]: Realiza requisições HTTP.
+wget [URL]: Baixa arquivos de uma URL.
+
+ifconfig: Exibe ou configura interfaces de rede (deprecated em algumas distribuições; substituído por ip).
+ip addr: Mostra detalhes sobre as interfaces de rede.
+ip link set [interface] up: Ativa uma interface de rede.
+ip link set [interface] down: Desativa uma interface de rede.
+ethtool [interface]: Mostra detalhes sobre uma interface Ethernet.
+nmcli: Gerencia conexões de rede com NetworkManager.
+iwconfig: Exibe ou configura interfaces sem fio.
+
+netstat -tuln: Lista conexões TCP/UDP e portas abertas (substituído pelo comando ss em sistemas modernos).
+ss -tuln: Mostra conexões ativas e portas em escuta.
+iftop: Monitora tráfego de rede em tempo real (precisa ser instalado).
+nload: Monitora uso de banda de rede em tempo real (precisa ser instalado).
+tcpdump: Captura pacotes de rede (requere privilégios root).
+wireshark: Ferramenta gráfica para captura e análise de pacotes (precisa ser instalado).
+
+DNS e Resolução de Nomes
+nslookup [domínio]: Verifica registros DNS de um domínio.
+dig [domínio]: Faz consultas DNS detalhadas.
+host [domínio]: Verifica informações de DNS de forma simples.
+resolvectl query [domínio]: Verifica resolução de nomes de domínio (em sistemas com systemd-resolved).
+
+Manipulação de Firewall
+ufw status: Verifica o status do firewall (Ubuntu/Debian).
+ufw allow [porta]: Permite o tráfego em uma porta específica.
+ufw deny [porta]: Bloqueia o tráfego em uma porta específica.
+iptables -L: Lista as regras do firewall.
+iptables -A INPUT -p tcp --dport [porta] -j ACCEPT: Permite tráfego na porta especificada.
+firewall-cmd --list-all: Lista todas as configurações do firewall (RHEL/CentOS com firewalld).
+firewall-cmd --add-port=[porta]/tcp --permanent: Permite uma porta específica no firewall.
+
+
+Análise de Roteamento
+route -n: Mostra a tabela de roteamento (substituído por ip route).
+ip route: Exibe ou modifica rotas de rede.
+ip route add [rede] via [gateway] dev [interface]: Adiciona uma nova rota.
+ip route del [rede]: Remove uma rota.
+
+
