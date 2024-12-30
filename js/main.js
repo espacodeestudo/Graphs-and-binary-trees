@@ -1,11 +1,12 @@
-import { renderizaGrafo } from "./grafo.js";
-import {renderizaArvoreBinaria} from "./binaryTrees.js"
+import { renderizaGrafo } from "./grafo/grafo.js";
+import {renderizaArvoreBinaria} from "./tree/binaryTrees.js"
 
 
 const selectEstr = document.getElementsByName("estru");
 const Box = document.querySelector(".Box");
 const Box_des = document.createElement("div");
 Box_des.setAttribute("class", "Box_des");
+Box_des.setAttribute("id", "box_des");
 
 
 if (!window.vis) {
